@@ -1,7 +1,7 @@
 ### Trie / Prefix - tree
 
 - Aplicações de auto complete
-![img.png](images/image_trie.png)
+![img.png](../images/image_trie.png)
 
 - Implementação:
   - Nódos
