@@ -6,6 +6,7 @@ public class TwoPointer_ReverseWordInAString {
 
     public static void main(String[] args) {
         System.out.println(reverseWords("Let's take LeetCode contest"));
+        System.out.println(reverseWords2("Let's take LeetCode contest"));
     }
 
     public static String reverseWords(String s) {
@@ -39,6 +40,18 @@ public class TwoPointer_ReverseWordInAString {
 
         StringBuilder response = new StringBuilder();
         return String.valueOf(response.append(stringArray));
+    }
+
+    public static String reverseWords2(String s) {
+        String [] words = s.split(" ");
+        StringBuilder result = new StringBuilder();
+        for (String word: words) {
+            StringBuilder reversedWord = new StringBuilder(word).reverse();
+            result.append(reversedWord).append(" ");
+        }
+        result.deleteCharAt(result.length()-1);
+
+        return result.toString();
     }
 
 }
