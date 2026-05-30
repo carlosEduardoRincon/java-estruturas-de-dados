@@ -7,7 +7,7 @@ public class TwoPointer_ReverseWordInAString {
     public static void main(String[] args) {
         System.out.println(reverseWords("Let's take LeetCode contest"));
         System.out.println(reverseWords2("Let's take LeetCode contest"));
-        System.out.println(reverseStr3("abcdefg", 8));
+        System.out.println(reverseStr("abcdefg", 8));
     }
 
     public static String reverseWords(String s) {
