@@ -56,7 +56,7 @@ public class TwoPointer_ReverseWordInAString {
     }
 
 
-    public String reverseStr(String s, int k) {
+    public static String reverseStr(String s, int k) {
         char[] str = s.toCharArray();
         int n = s.length();
 
@@ -73,7 +73,7 @@ public class TwoPointer_ReverseWordInAString {
         return revStr;
     }
 
-    public void reverseK(int i, int j, char[] str) {
+    public static void reverseK(int i, int j, char[] str) {
         while (i < j) {
             char temp = str[i];
             str[i] = str[j];
