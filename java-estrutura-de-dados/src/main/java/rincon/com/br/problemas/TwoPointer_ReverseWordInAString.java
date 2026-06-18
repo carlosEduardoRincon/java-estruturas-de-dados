@@ -1,6 +1,4 @@
-package rincon.com.br;
-
-import java.util.Arrays;
+package rincon.com.br.problemas;
 
 public class TwoPointer_ReverseWordInAString {
 
