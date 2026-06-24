@@ -1,6 +1,6 @@
 package rincon.com.br.problemas;
 
-public class TwoPointer_ReverseWordInAString {
+public class TwoPointerReverseWordInAString {
 
     public static void main(String[] args) {
         System.out.println(reverseWords("Let's take LeetCode contest"));
