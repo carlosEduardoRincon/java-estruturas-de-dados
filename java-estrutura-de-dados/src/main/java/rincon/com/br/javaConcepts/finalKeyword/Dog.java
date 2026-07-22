@@ -1,6 +1,8 @@
 package rincon.com.br.javaConcepts.finalKeyword;
 
-public class Dog extends Animal {
+import java.io.Serializable;
+
+public class Dog extends Animal implements Serializable {
     private int walkDistancePreferente;
 
     public void bark() {
