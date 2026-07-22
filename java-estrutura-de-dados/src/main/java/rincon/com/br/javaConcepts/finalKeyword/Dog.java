@@ -1,7 +1,5 @@
 package rincon.com.br.javaConcepts.finalKeyword;
 
-import static rincon.com.br.javaConcepts.finalKeyword.FinalExample.pi;
-
 public class Dog extends Animal {
     private int walkDistancePreferente;
 
@@ -18,6 +16,6 @@ public class Dog extends Animal {
     }
 
     public void eat() {
-        System.out.println("mom mom mom" + FinalExample.pi);
+        System.out.println("mom mom mom" + FinalExample.PI);
     }
 }
