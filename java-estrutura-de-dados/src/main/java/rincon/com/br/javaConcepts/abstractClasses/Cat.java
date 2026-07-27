@@ -1,0 +1,9 @@
+package rincon.com.br.javaConcepts.abstractClasses;
+
+public class Cat extends Animal {
+
+    @Override
+    public void makeNoise() {
+        System.out.println("Miau");
+    }
+}
