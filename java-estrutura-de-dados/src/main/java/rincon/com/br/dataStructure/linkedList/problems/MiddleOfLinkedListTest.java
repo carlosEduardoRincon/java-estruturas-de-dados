@@ -1,6 +1,8 @@
-package rincon.com.br.estruturaDados.linkedList;
+package rincon.com.br.dataStructure.linkedList.problems;
 
-public class TestMiddleOfLinkedList {
+import rincon.com.br.dataStructure.linkedList.ListNode;
+
+public class MiddleOfLinkedListTest {
     public static void main(String[] args) {
 
         MiddleOfLinkedList solution = new MiddleOfLinkedList();

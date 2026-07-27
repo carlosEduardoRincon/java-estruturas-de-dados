@@ -1,4 +1,4 @@
-package rincon.com.br.algoritmos;
+package rincon.com.br.algorithms;
 
 public class BinarySearch {
 

@@ -1,4 +1,6 @@
-package rincon.com.br.estruturaDados.linkedList;
+package rincon.com.br.dataStructure.linkedList.problems;
+
+import rincon.com.br.dataStructure.linkedList.ListNode;
 
 public class MiddleOfLinkedList {
 

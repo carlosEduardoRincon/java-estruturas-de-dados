@@ -1,6 +1,6 @@
-package rincon.com.br.estruturaDados.linkedList;
+package rincon.com.br.dataStructure.linkedList;
 
-public class Main {
+public class DoublyLinkedListTest {
 
     public static void main(String[] args) {
 
