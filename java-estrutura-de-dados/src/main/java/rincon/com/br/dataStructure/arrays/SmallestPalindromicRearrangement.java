@@ -1,4 +1,4 @@
-package rincon.com.br.dataStructure.hashMap;
+package rincon.com.br.dataStructure.arrays;
 
 import java.util.Arrays;
 
