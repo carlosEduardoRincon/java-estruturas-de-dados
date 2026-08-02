@@ -8,7 +8,7 @@ import java.util.Arrays;
     There exist someways to choose a pivot, the most common is to choose the middle.
 
     Advantage:
-        -
+        - Better with arrays
 
     Time complexity (depends on the pivot selected):
         - Best case: O(n log n)
@@ -18,7 +18,6 @@ import java.util.Arrays;
         - Best case: O(n log n)
         - Average case: O(n log n)
         - Worst Case: O (n)
-
  */
 public class QuickSort {
 
