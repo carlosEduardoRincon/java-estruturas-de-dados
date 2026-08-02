@@ -12,8 +12,13 @@ public class Dog extends Animal {
         this.breed = breed;
     }
 
-    @Override
     public void eat() {
         System.out.println("nhami nhami");
+    }
+
+    // Method overloading
+    public void eat(String food) {
+        eat();
+        System.out.println(food);
     }
 }
