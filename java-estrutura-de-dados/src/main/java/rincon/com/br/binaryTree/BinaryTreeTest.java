@@ -14,5 +14,9 @@ public class BinaryTreeTest {
 
         System.out.println(binaryTree.search(1));
         System.out.println(binaryTree.search(10));
+
+        System.out.println(binaryTree.preorderTraversal().toString());
+        System.out.println(binaryTree.inorderTraversal().toString());
+        System.out.println(binaryTree.postorderTraversal().toString());
     }
 }
