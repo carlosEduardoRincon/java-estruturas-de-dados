@@ -55,6 +55,24 @@ public class BinaryTree {
         }
     }
 
+    public boolean dfs(int data) {
+        return dfsRecursive(data, this.root);
+    }
+
+    public boolean dfsRecursive(int data, Node node) {
+        if (node == null) {
+            return false;
+        }
+
+        if (node.getData() == data) {
+            return true;
+        }
+
+        if (dfsRecursive(data, node.getLeft())) {
+            return true;
+        } else return dfsRecursive(data, node.getRight());
+    }
+
     public List<Integer> preorderTraversal() {
         List<Integer> result = new ArrayList<>();
 
