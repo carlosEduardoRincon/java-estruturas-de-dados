@@ -11,6 +11,10 @@ public class BinaryTree {
         this.root = null;
     }
 
+    public Node getRoot() {
+        return this.root;
+    }
+
     public void insert(int data) {
         if (this.root == null) {
             this.root = new Node(data);
