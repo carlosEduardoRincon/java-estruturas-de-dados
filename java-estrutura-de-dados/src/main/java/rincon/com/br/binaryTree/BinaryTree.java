@@ -1,6 +1,8 @@
 package rincon.com.br.binaryTree;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Deque;
 import java.util.List;
 
 public class BinaryTree {
@@ -59,24 +61,6 @@ public class BinaryTree {
         }
     }
 
-    public boolean dfs(int data) {
-        return dfsRecursive(data, this.root);
-    }
-
-    public boolean dfsRecursive(int data, Node node) {
-        if (node == null) {
-            return false;
-        }
-
-        if (node.getData() == data) {
-            return true;
-        }
-
-        if (dfsRecursive(data, node.getLeft())) {
-            return true;
-        } else return dfsRecursive(data, node.getRight());
-    }
-
     public List<Integer> preorderTraversal() {
         List<Integer> result = new ArrayList<>();
 
@@ -123,6 +107,50 @@ public class BinaryTree {
             postorderRecursive(node.getRight(), result);
             result.add(node.getData());
         }
+    }
+
+    public boolean dfs(int data) {
+        return dfsRecursive(data, this.root);
+    }
+
+    public boolean dfsRecursive(int data, Node node) {
+        if (node == null) {
+            return false;
+        }
+
+        if (node.getData() == data) {
+            return true;
+        }
+
+        if (dfsRecursive(data, node.getLeft())) {
+            return true;
+        } else return dfsRecursive(data, node.getRight());
+    }
+
+    public boolean bfs(int data) {
+        if (this.root == null) {
+            return false;
+        }
+
+        Deque<Node> queue = new ArrayDeque<>();
+        queue.add(this.root);
+
+        while (queue.peek() != null) {
+            Node node = queue.pop();
+            if (node.getData() == data) {
+                return true;
+            }
+
+            if (node.getLeft() != null) {
+                queue.add(node.getLeft());
+            }
+
+            if (node.getRight() != null) {
+                queue.add(node.getRight());
+            }
+        }
+
+        return false;
     }
 }
 
